@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Open-Sans";
+    src: url("OpenSans-Bold.ttf") format("woff");
+}
+
+.fonts {
+    font-family: Open-Sans, sans-serif;
+    font-size: 16px;
+}
+.custom-font {
+    font-weight: 500;
+}
+

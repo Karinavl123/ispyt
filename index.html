@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ваш заголовок</title>
+    <!-- Підключення Bulma CSS -->
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="container">
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <form id="myForm" class="box">
+                    <div class="field">
+                        <label class="label" for="phone">Номер телефону:</label>
+                        <div class="control">
+                            <input class="input" type="tel" id="phone" name="phone" pattern="\+380[0-9]{9}" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="name">П.І.Б:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="name" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary" type="button" onclick="submitForm()">Відправити</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <table class="table is-bordered">
+                    <thead>
+                    <tr>
+                        <th>Номер телефону</th>
+                        <th>П.І.Б</th>
+                        <th>Оператор</th>
+                    </tr>
+                    </thead>
+                    <tbody id="output"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
